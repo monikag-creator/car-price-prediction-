@@ -48,7 +48,7 @@ This project builds a **used car price prediction system** using supervised mach
 ### 1. Clone the Repository
 ```
 git clone https://github.com/monikag-creator/car-price-prediction-.git
-cd car-price-prediction
+cd car-price-prediction-
 ```
 
 ### 2. Install Dependencies
