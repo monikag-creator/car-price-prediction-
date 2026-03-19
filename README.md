@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚗 Car Price Prediction Model
 
 > A machine learning pipeline to predict used car prices — inspired by the Cardeko Car Price Prediction approach.
@@ -134,3 +135,7 @@ scikit-learn>=1.2
 ---
 
 *Built as part of a machine learning course project. Inspired by the Cardeko Car Price Prediction tutorial.*
+=======
+# car-price-prediction-
+ car price prediction using Machine Learning
+>>>>>>> 5a35417d5f572722e306b7bc0947476637d5d633
