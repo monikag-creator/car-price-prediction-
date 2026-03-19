@@ -1,28 +1,17 @@
-<<<<<<< HEAD
-# 🚗 Car Price Prediction Model
-
+#  Car Price Prediction Model
 > A machine learning pipeline to predict used car prices — inspired by the Cardeko Car Price Prediction approach.
 
----
-
-## 📌 Introduction
-
+##  Introduction
 This project builds a **used car price prediction system** using supervised machine learning. Given features like brand, age, fuel type, and mileage, the model estimates the fair market value of a used car. It demonstrates the full ML workflow: data collection → preprocessing → model training → evaluation → prediction.
 
----
-
-## 📂 Dataset
-
+##  Dataset
 | Property | Detail |
-|---|---|
 | **Source** | Synthetic dataset modeled on real Indian used-car market data (e.g., CarDekho / Cardeko CSV) |
 | **Records** | 1,500 cars |
 | **Target** | `selling_price` (in ₹ INR) |
 
 ### Features Used
-
 | Feature | Type | Description |
-|---|---|---|
 | `name` | Categorical | Car brand (Maruti, Honda, BMW, etc.) |
 | `year` | Numeric | Manufacturing year |
 | `km_driven` | Numeric | Total kilometers driven |
@@ -35,50 +24,40 @@ This project builds a **used car price prediction system** using supervised mach
 | `seats` | Numeric | Number of seats |
 
 ### Engineered Features
-
 | Feature | Formula | Rationale |
-|---|---|---|
 | `car_age` | `2024 - year` | More intuitive than raw year |
 | `km_per_year` | `km_driven / car_age` | Usage intensity |
 | `engine_power_ratio` | `engine / 1000` | Normalized engine size |
 
 ### Preprocessing Steps
-
 1. **Drop rows** with missing `selling_price`
 2. **Remove outliers** using 1st–99th percentile IQR clipping
 3. **Label Encoding** for all categorical columns
 4. **Feature Engineering** (3 derived features added)
 5. **StandardScaler** applied for Linear Regression baseline
 
----
-
-## 🤖 Models Implemented
-
+##  Models Implemented
 | Model | RMSE | MAE | R² Score |
-|---|---|---|---|
 | Linear Regression | ₹6,12,342 | ₹4,61,392 | 0.231 |
 | Random Forest | ₹1,66,039 | ₹97,301 | **0.944** |
-| **Gradient Boosting** ✅ | **₹1,22,842** | **₹67,815** | **0.969** |
+| **Gradient Boosting**  | **₹1,22,842** | **₹67,815** | **0.969** |
 
 **Gradient Boosting Regressor** was selected as the best model with an R² of **0.969**.
 
----
-
-## 🚀 Setup & Run
-
+##  Setup & Run
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/car-price-prediction.git
+```
+git clone https://github.com/monikag-creator/car-price-prediction-.git
 cd car-price-prediction
 ```
 
 ### 2. Install Dependencies
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ### 3. Run the Model
-```bash
+```
 python car_price_model.py
 ```
 
@@ -87,7 +66,7 @@ Open `demo_app.html` in any browser — no server required.
 
 ---
 
-## 📊 Results & Insights
+##  Results & Insights
 
 ### Model Performance Summary
 - **Gradient Boosting** achieves R² = 0.969, meaning the model explains ~97% of price variance.
@@ -111,7 +90,7 @@ Open `demo_app.html` in any browser — no server required.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 car_price_prediction/
