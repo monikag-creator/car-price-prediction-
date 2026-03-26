@@ -103,7 +103,7 @@ car_price_prediction/
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 ```
 pandas>=1.5
